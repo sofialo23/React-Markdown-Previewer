@@ -1,0 +1,81 @@
+html, body{
+	width: 100%;
+	margin: 0px;
+    padding: 0px;
+
+}
+
+
+.App{
+	background-color: #c5d5c5;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+}
+
+#header{
+	margin-top: 0px;
+	padding-top: 20px;
+	text-align: center;
+	border: none;
+	background-color: #c5d5c5;
+}
+
+#left-cont{
+	flex-basis: 50%;
+	text-align: center;
+	background-color: #c5d5c5;
+
+}
+
+#right-cont{
+	flex-basis: 50%;
+	background-color:#c5d5c5;
+}
+
+#editor{
+	overflow: auto;
+	width: 95%;
+	height: 500px;
+	background-color: #fff;
+	border-style: none;
+	margin-top: 5%; 
+	box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#preview{
+	width: 90%;
+	background-color: #f0f0f0 ;
+	margin: auto;
+	box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table{
+	border-collapse: collapse;	
+}
+td, th{
+	border: 1px solid black;
+}
+
+ul li, ol li{
+	text-align: left;
+}
+
+pre, code{
+	width: 100%;
+	background-color: white;
+	font-family: monospace;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+h1, h2{
+	border-bottom: 2px solid black;
+}
+
+.signature{
+	text-align: center;
+	margin-bottom: -25px;
+}

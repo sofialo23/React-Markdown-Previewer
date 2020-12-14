@@ -42,8 +42,6 @@ And here. | Okay. | I think we get it.
 1. And there are numbererd lists too.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
-
-![React Logo w/ Text](https://goo.gl/Umyytc)
 `;
 
 export default class App extends React.Component{
@@ -68,19 +66,24 @@ export default class App extends React.Component{
 
 render(){
   return (
-    <div className="App">
+    <div className="App"> 
+    <h1 id = "header">My Markdown Previewer</h1>
       <div className = "container">
-        <textarea id="editor" value = {this.state.inputValue} onChange = {this.updateInput} text = {placeholder}>
-		</textarea>
-        <div id = "preview"
-                dangerouslySetInnerHTML={{
-                  __html: marked(this.state.inputValue)
-                }}>
+      	<div id = "left-cont">
+	        <textarea id="editor" value = {this.state.inputValue} onChange = {this.updateInput} text = {placeholder}>
+			</textarea>
+		</div>
+		<div id = "right-cont">
+	        <div id = "preview"
+	                dangerouslySetInnerHTML={{
+	                  __html: marked(this.state.inputValue)
+	                }}>
+	        </div>
         </div>
-        
-      </div>
 
-    </div>
+      </div> 
+      <div className = "signature"><h5>By Sofia Lopez</h5></div>
+    </div> /*end of my app*/
 
   );}
 }
