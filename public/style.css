@@ -98,15 +98,15 @@ h1, h2{
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #eea29a;
   border: none;
   border-radius: 15px;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {background-color: #c94c4c}
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: #c94c4c;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
