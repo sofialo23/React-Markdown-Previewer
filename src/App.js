@@ -56,6 +56,7 @@ export default class App extends React.Component{
 		}
 
 		this.updateInput = this.updateInput.bind(this);
+		this.resetCode = this.resetCode.bind(this);
 	};//end of constructor
 
 	updateInput(event){
@@ -64,12 +65,21 @@ export default class App extends React.Component{
 		});
 	}
 
-	
+	resetCode(){
+
+	var r = window.confirm("Are you sure you want to reset the code?");
+		if(r == true){
+			this.setState({
+			inputValue: placeholder
+		});
+		}
+	}
 
 render(){
   return (
     <div className="App"> 
     <h1 id = "header">My Markdown Previewer</h1>
+    <button  className = "button" onClick={this.resetCode}>Reset code</button>
       <div className = "container">
       	<div id = "left-cont">
 	        <textarea id="editor" value = {this.state.inputValue} onChange = {this.updateInput} text = {placeholder}>
