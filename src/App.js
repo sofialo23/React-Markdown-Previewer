@@ -42,6 +42,8 @@ And here. | Okay. | I think we get it.
 1. And there are numbererd lists too.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
+
+![A cute doll](https://i.pinimg.com/564x/ae/5c/8f/ae5c8fac951f5f374cf520184fb9e3ef.jpg)
 `;
 
 export default class App extends React.Component{
